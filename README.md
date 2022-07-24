@@ -4,7 +4,7 @@
 Given the list of recipe names, start dates and tray numbers outlined below, create an application that queries the Recipe API (see info below) and generates a JSON file with a schedule.
 The schedule should outline at exactly what time light and water commands should be sent to the Tower, and what the light intensity or amount to water should be.
 The dates in the schedule should be in UTC.
-```json
+```js
 {
   input: [
     {
