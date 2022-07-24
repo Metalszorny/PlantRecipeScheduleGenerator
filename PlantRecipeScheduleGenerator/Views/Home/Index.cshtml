@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Generate schedule for the trays</h1>
+    <div>
+        <div>What should be the file's name: </div>
+        <input type="text" name="fileName" value="generatedSchedule.json" />
+    </div>
+    <br />
+    <div>
+        <div>Where should the file be saved: </div>
+        <input type="text" name="folderPath" value="C:\temp\" />
+    </div>
+    <br />
+    <div>
+        <div>What should the input look like fo the trays: </div>
+        <textarea cols="50" rows="10" name="trayInput">
+{
+  "input": [
+    {
+      "trayNumber": 1,
+      "recipeName": "Basil",
+      "startDate": "2022-01-24T12:30:00.0000000Z"
+    },
+    {
+      "trayNumber": 2,
+      "recipeName": "Strawberries",
+      "startDate": "2021-13-08T17:33:00.0000000Z"
+    },
+    {
+      "trayNumber": 3,
+      "recipeName": "Basil",
+      "startDate": "2030-01-01T23:45:00.0000000Z"
+    }
+  ]
+}</textarea>
+    </div>
+    <br />
+    <button onclick="GetRecipes()">Generate</button>
+</div>
